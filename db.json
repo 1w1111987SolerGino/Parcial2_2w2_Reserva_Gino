@@ -1,0 +1,486 @@
+{
+  "venues": [
+    {
+      "id": "v1",
+      "name": "Centro de Convenciones Aurora",
+      "capacity": 500,
+      "pricePerHour": 350,
+      "amenities": [
+        "Estacionamiento gratuito",
+        "WiFi de alta velocidad",
+        "Sistema de audio",
+        "Proyectores HD",
+        "Cocina industrial"
+      ],
+      "address": "Av. Principal 123, Ciudad Empresarial"
+    },
+    {
+      "id": "v2",
+      "name": "Business Center Plaza",
+      "capacity": 200,
+      "pricePerHour": 250,
+      "amenities": [
+        "Seguridad 24/7",
+        "WiFi empresarial",
+        "Equipo audiovisual",
+        "Aire acondicionado"
+      ],
+      "address": "Calle Comercial 456, Distrito Financiero"
+    },
+    {
+      "id": "v3",
+      "name": "Hotel Executive Gardens",
+      "capacity": 800,
+      "pricePerHour": 600,
+      "amenities": [
+        "Valet parking",
+        "Servicio de catering",
+        "Sistema de iluminación",
+        "Escenario",
+        "Vestidores",
+        "Lobby exclusivo"
+      ],
+      "address": "Av. Corporativa 789, Zona Hotelera"
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "name": "Catering Ejecutivo",
+      "pricePerPerson": 45,
+      "minimumPeople": 20,
+      "description": "Menú gourmet con opciones vegetarianas y veganas"
+    },
+    {
+      "id": "s2",
+      "name": "Servicio de Coffee Break",
+      "pricePerPerson": 15,
+      "minimumPeople": 15,
+      "description": "Café, té, bocadillos y pastelería fina"
+    },
+    {
+      "id": "s3",
+      "name": "Equipo Audiovisual Premium",
+      "pricePerPerson": 10,
+      "minimumPeople": 50,
+      "description": "Pantallas LED, sonido profesional y microfonía"
+    },
+    {
+      "id": "s4",
+      "name": "Decoración Corporativa",
+      "pricePerPerson": 8,
+      "minimumPeople": 30,
+      "description": "Arreglos florales, banners y señalización personalizada"
+    },
+    {
+      "id": "s5",
+      "name": "Servicio de Fotografía",
+      "pricePerPerson": 5,
+      "minimumPeople": 50,
+      "description": "Cobertura fotográfica profesional del evento"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b1",
+      "bookingCode": "TEC2810A123",
+      "companyName": "Tech Solutions Inc",
+      "companyEmail": "events@techsolutions.com",
+      "contactPhone": "+1234567890",
+      "venueId": "v1",
+      "eventDate": "2024-10-28",
+      "startTime": "14:00",
+      "endTime": "20:00",
+      "totalPeople": 150,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 150,
+          "pricePerPerson": 45,
+          "startTime": "15:00",
+          "endTime": "17:00"
+        },
+        {
+          "serviceId": "s2",
+          "quantity": 150,
+          "pricePerPerson": 15,
+          "startTime": "17:30",
+          "endTime": "18:30"
+        }
+      ],
+      "totalAmount": 9000,
+      "status": "confirmed",
+      "createdAt": "2024-10-15T10:30:00Z"
+    },
+    {
+      "id": "b2",
+      "bookingCode": "INN2910B456",
+      "companyName": "Innovate Corp",
+      "companyEmail": "meetings@innovate.com",
+      "contactPhone": "+1987654321",
+      "venueId": "v2",
+      "eventDate": "2024-10-29",
+      "startTime": "09:00",
+      "endTime": "15:00",
+      "totalPeople": 80,
+      "services": [
+        {
+          "serviceId": "s2",
+          "quantity": 80,
+          "pricePerPerson": 15,
+          "startTime": "10:30",
+          "endTime": "11:30"
+        },
+        {
+          "serviceId": "s3",
+          "quantity": 80,
+          "pricePerPerson": 10,
+          "startTime": "09:00",
+          "endTime": "15:00"
+        }
+      ],
+      "totalAmount": 2000,
+      "status": "pending",
+      "createdAt": "2024-10-20T14:15:00Z"
+    },
+    {
+      "id": "b3",
+      "bookingCode": "GLO3010C789",
+      "companyName": "Global Enterprises",
+      "companyEmail": "events@global.com",
+      "contactPhone": "+1122334455",
+      "venueId": "v3",
+      "eventDate": "2024-10-30",
+      "startTime": "18:00",
+      "endTime": "23:00",
+      "totalPeople": 300,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 300,
+          "pricePerPerson": 45,
+          "startTime": "19:00",
+          "endTime": "21:00"
+        },
+        {
+          "serviceId": "s4",
+          "quantity": 300,
+          "pricePerPerson": 8,
+          "startTime": "18:00",
+          "endTime": "23:00"
+        },
+        {
+          "serviceId": "s5",
+          "quantity": 300,
+          "pricePerPerson": 5,
+          "startTime": "18:00",
+          "endTime": "23:00"
+        }
+      ],
+      "totalAmount": 17400,
+      "status": "confirmed",
+      "createdAt": "2024-10-01T09:45:00Z"
+    },
+    {
+      "id": "b4",
+      "bookingCode": "DIG3110D012",
+      "companyName": "Digital Solutions",
+      "companyEmail": "contact@digital.com",
+      "contactPhone": "+1567890123",
+      "venueId": "v1",
+      "eventDate": "2024-10-31",
+      "startTime": "10:00",
+      "endTime": "16:00",
+      "totalPeople": 100,
+      "services": [
+        {
+          "serviceId": "s2",
+          "quantity": 100,
+          "pricePerPerson": 15,
+          "startTime": "11:30",
+          "endTime": "12:30"
+        }
+      ],
+      "totalAmount": 1500,
+      "status": "cancelled",
+      "createdAt": "2024-10-10T16:20:00Z"
+    },
+    {
+      "id": "e7ad",
+      "companyName": "testtest",
+      "companyEmail": "test@gmail.com",
+      "contactPhone": "03517728987",
+      "venueId": "v1",
+      "eventDate": "2024-10-28",
+      "startTime": "14:04",
+      "endTime": "14:06",
+      "totalPeople": 50,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 50,
+          "startTime": "14:04",
+          "endTime": "15:05"
+        }
+      ],
+      "bookingCode": "TES28104724",
+      "totalAmount": 2250,
+      "status": "pending",
+      "createdAt": "2024-10-28T17:05:07.744Z"
+    },
+    {
+      "id": "54ac",
+      "companyName": "sadas",
+      "companyEmail": "asdas@hotmal.com",
+      "contactPhone": "+543517728987",
+      "venueId": "v1",
+      "eventDate": "2024-10-28",
+      "startTime": "14:24",
+      "endTime": "15:24",
+      "totalPeople": 499,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 499,
+          "startTime": "14:25",
+          "endTime": "14:25"
+        }
+      ],
+      "bookingCode": "SAD28100950",
+      "totalAmount": 19086.75,
+      "status": "pending",
+      "createdAt": "2024-10-28T17:25:31.373Z"
+    },
+    {
+      "id": "842d",
+      "companyName": "asdasdasdad",
+      "companyEmail": "fabio@trasusargenitina.com",
+      "contactPhone": "+543517728987",
+      "venueId": "v1",
+      "eventDate": "2024-10-29",
+      "startTime": "15:32",
+      "endTime": "17:32",
+      "totalPeople": 500,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 500,
+          "startTime": "15:32",
+          "endTime": "17:32"
+        }
+      ],
+      "bookingCode": "ASD28108346",
+      "totalAmount": 19125,
+      "status": "pending",
+      "createdAt": "2024-10-28T18:33:39.735Z"
+    },
+    {
+      "id": "7f03",
+      "bookingCode": "YCLT39",
+      "companyName": "EEEEE",
+      "companyEmail": "ginosoler11@gmail.com",
+      "contactPhone": "+543518077326",
+      "venueId": "v1",
+      "eventDate": "2024-11-08T00:00:00.000Z",
+      "startTime": "19:43",
+      "endTime": "23:47",
+      "totalPeople": 12,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 123,
+          "pricePerPerson": 45,
+          "startTime": "20:44",
+          "endTime": "21:46"
+        }
+      ],
+      "totalAmount": 5535,
+      "status": "pending",
+      "createdAt": "2024-11-08T22:43:31.773Z"
+    },
+    {
+      "id": "6891",
+      "bookingCode": "31SEIX",
+      "companyName": "GININO7",
+      "companyEmail": "ginosoler11@gmail.com",
+      "contactPhone": "+543518077326",
+      "venueId": "v2",
+      "eventDate": "2024-11-08T00:00:00.000Z",
+      "startTime": "19:47",
+      "endTime": "22:49",
+      "totalPeople": 1000,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 123,
+          "pricePerPerson": 45,
+          "startTime": "20:49",
+          "endTime": "22:50"
+        }
+      ],
+      "totalAmount": 4917.25,
+      "status": "pending",
+      "createdAt": "2024-11-08T22:48:06.122Z"
+    },
+    {
+      "id": "5bfd",
+      "bookingCode": "4BVSCQ",
+      "companyName": "asdasdasd",
+      "companyEmail": "ginosoler11@gmail.com",
+      "contactPhone": "+543518077326",
+      "venueId": "v2",
+      "eventDate": "2024-11-08T00:00:00.000Z",
+      "startTime": "19:52",
+      "endTime": "21:54",
+      "totalPeople": 503,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 123,
+          "pricePerPerson": 45,
+          "startTime": "20:54",
+          "endTime": "21:56"
+        },
+        {
+          "serviceId": "s1",
+          "quantity": 123,
+          "pricePerPerson": 45,
+          "startTime": "20:55",
+          "endTime": "21:54"
+        }
+      ],
+      "totalAmount": 9622,
+      "status": "pending",
+      "createdAt": "2024-11-08T22:53:58.732Z"
+    },
+    {
+      "id": "9e1d",
+      "bookingCode": "5SAKV2",
+      "companyName": "123123123",
+      "companyEmail": "ginosoler11@gmail.com",
+      "contactPhone": "+543518077326",
+      "venueId": "v1",
+      "eventDate": "2024-11-21T00:00:00.000Z",
+      "startTime": "19:00",
+      "endTime": "19:59",
+      "totalPeople": 1233,
+      "services": [
+        {
+          "serviceId": "s2",
+          "quantity": 123,
+          "pricePerPerson": 15,
+          "startTime": "20:55",
+          "endTime": "23:58"
+        }
+      ],
+      "totalAmount": 1865.75,
+      "status": "pending",
+      "createdAt": "2024-11-08T22:54:54.743Z"
+    },
+    {
+      "id": "1c1d",
+      "bookingCode": "XMCK8E",
+      "companyName": "123123",
+      "companyEmail": "123123@gmail.com",
+      "contactPhone": "+543518077326",
+      "venueId": "v1",
+      "eventDate": "2024-11-20T00:00:00.000Z",
+      "startTime": "21:22",
+      "endTime": "23:23",
+      "totalPeople": 123233,
+      "services": [
+        {
+          "serviceId": "s3",
+          "quantity": 1233,
+          "pricePerPerson": 10,
+          "startTime": "21:21",
+          "endTime": "21:23"
+        },
+        {
+          "serviceId": "s1",
+          "quantity": 123,
+          "pricePerPerson": 45,
+          "startTime": "20:22",
+          "endTime": "20:22"
+        }
+      ],
+      "totalAmount": 15185.25,
+      "status": "pending",
+      "createdAt": "2024-11-08T23:22:43.409Z"
+    },
+    {
+      "id": "a1d1",
+      "bookingCode": "3L36K1",
+      "companyName": "qweqwe",
+      "companyEmail": "ginosoler11@gmail.com",
+      "contactPhone": "+543518077326",
+      "venueId": "v1",
+      "eventDate": "2024-11-08T00:00:00.000Z",
+      "startTime": "20:40",
+      "endTime": "02:46",
+      "totalPeople": 1233,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 1233,
+          "pricePerPerson": 45,
+          "startTime": "20:40",
+          "endTime": "02:46"
+        }
+      ],
+      "totalAmount": 47162.25,
+      "status": "pending",
+      "createdAt": "2024-11-08T23:40:31.158Z"
+    },
+    {
+      "id": "0d70",
+      "bookingCode": "SUNWOZ",
+      "companyName": "qweqwe",
+      "companyEmail": "ginosoler11@gmail.com",
+      "contactPhone": "+543518077326",
+      "venueId": "v3",
+      "eventDate": "2024-11-08T00:00:00.000Z",
+      "startTime": "20:42",
+      "endTime": "02:48",
+      "totalPeople": 123,
+      "services": [
+        {
+          "serviceId": "s1",
+          "quantity": 1231,
+          "pricePerPerson": 45,
+          "startTime": "23:46",
+          "endTime": "23:46"
+        }
+      ],
+      "totalAmount": 47085.75,
+      "status": "pending",
+      "createdAt": "2024-11-08T23:44:05.284Z"
+    }
+  ],
+  "availability": [
+    {
+      "id": "1",
+      "venueId": "v1",
+      "date": "2024-10-28",
+      "available": false
+    },
+    {
+      "id": "2",
+      "venueId": "v1",
+      "date": "2024-10-29",
+      "available": true
+    },
+    {
+      "id": "3",
+      "venueId": "v2",
+      "date": "2024-10-28",
+      "available": true
+    },
+    {
+      "id": "4",
+      "venueId": "v2",
+      "date": "2024-10-29",
+      "available": false
+    }
+  ]
+}
